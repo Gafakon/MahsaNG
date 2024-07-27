@@ -43,7 +43,7 @@ jobs:
         mkdir ${{ github.workspace }}/build
         cd ${{ github.workspace }}/build
         git clone --depth=1 -b main https://github.com/GFW-knocker/Xray-core.git
-        cd AndroidLibXrayLite
+        cd Xray-core
         go get github.com/xtls/xray-core@${{ github.event.inputs.XRAY_CORE_VERSION }} || true
         gomobile init
         go mod tidy -v
